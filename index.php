@@ -103,10 +103,10 @@
 
         </div>
 
-        <div class="row">
+        <div class="row top-space">
             <div class="col-md-12 text-center bottom-space">
                 <hr>
-                Copyright &copy; 
+                &copy; 
                 <script type="text/javascript">
                     document.write(new Date().getFullYear());
                 </script>,

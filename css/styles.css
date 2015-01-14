@@ -65,6 +65,10 @@ a.banner-link:visited {
 	margin-bottom: 20px;
 }
 
+.top-space {
+	margin-top: 20px;
+}
+
 /*Tooltip*/
 .tooltip {
   font-size: 13px;
