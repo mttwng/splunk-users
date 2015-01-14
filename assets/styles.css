@@ -23,19 +23,6 @@ a:visited {
 	background-image: linear-gradient(top,#4d4d4d 0,#000 100%);*/
 }
 
-@media (min-width: 768px) {
-	.banner {
-		font-size: 24px;
-	}
-}
-
-@media (max-width: 768px) {
-	body {
-		font-size: 16px;
-	}
-}
-
-
 .banner h1 {
 	font-size: 60px;
 	line-height: 1;
@@ -92,4 +79,61 @@ a.banner-link:visited {
 
 .tooltip.top .tooltip-arrow {
   border-top-color: #fff;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 181px;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba( 255, 255, 255, 1); 
+	background-image: url('loading.gif');
+    background-position: 50% 25%;
+    background-repeat: no-repeat;
+    background-size: 10%;
+}
+
+body.loading {
+    overflow: hidden;   
+}
+
+body.loading .modal {
+    display: block;
+}
+
+@media (min-width: 768px) {
+	.banner {
+		font-size: 24px;
+	}
+}
+
+@media (max-width: 768px) {
+	body {
+		font-size: 16px;
+	}
+	.modal {
+		background-size: 20%;
+	}
+}
+
+@media (max-width: 768px) and (min-width: 404px) {
+	.modal {
+		top: 207px;
+	}
+}
+
+@media (max-width: 404px) and (min-width: 301px) {
+	.modal {
+		top: 233px;
+	}
+}
+
+@media (max-width: 300px) {
+	.modal {
+		top: 259px;
+	}
 }

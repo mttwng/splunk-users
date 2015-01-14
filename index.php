@@ -3,10 +3,10 @@
 <head>
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-    <link href="css/styles.css" rel="stylesheet">
+    <link href="assets/styles.css" rel="stylesheet">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="css/favicon.png" />
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
 
     <!-- Metadata -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
@@ -15,7 +15,7 @@
     <meta name="author" content="Matthew Wong">
     
 </head>
-<body>
+<body class="loading">
     <!-- Fixed navbar -->
     <!-- <nav class="navbar navbar-default navbar-static-top" role="navigation">
       <div class="container">
@@ -50,6 +50,16 @@
 
       </div>
     </div>
+
+    <div class="modal"></div>
+    
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <!-- Custom -->
+    <script src="assets/script.js"></script>
+
+
 
     <div class="container-fluid">
 
@@ -109,24 +119,12 @@
                 &copy; 
                 <script type="text/javascript">
                     document.write(new Date().getFullYear());
-                </script>,
+                </script>
                  Splunk Inc. Created by <a href="http://therealmatt.com/" target="_blank" rel="designer">Matthew Wong</a>.
 
             </div>
         </div>
-    </div> <!-- Fluid Container -->
-
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-    <!-- Tooltips -->
-    <script type="text/javascript">
-        $(function(){
-            $('[data-toggle="tooltip"]').tooltip({
-                placement : 'top'
-            });
-        });
-    </script>
+    </div> <!-- Fluid Container -->    
 
 </body>
 </html>
