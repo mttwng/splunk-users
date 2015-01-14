@@ -29,6 +29,13 @@ a:visited {
 	}
 }
 
+@media (max-width: 768px) {
+	body {
+		font-size: 16px;
+	}
+}
+
+
 .banner h1 {
 	font-size: 60px;
 	line-height: 1;
@@ -52,6 +59,10 @@ a.no-color:visited {
 a.banner-link,
 a.banner-link:visited {
 	color: #98ADCF;
+}
+
+.bottom-space {
+	margin-bottom: 20px;
 }
 
 /*Tooltip*/
