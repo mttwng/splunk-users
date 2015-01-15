@@ -40,7 +40,7 @@
 
     <div class="banner">
       <div class="container">
-        <h1>splunk<span style='color:#959595'>></span>users</h1>
+        <h1>splunk<span style='color:#959595'>></span><br class="rwd-break">users</h1>
         <!-- <h3>by <a href="http://webualize.com/">Matt</a></h3> -->
         <h3> 
           Trending information for Splunk users after you <a href="http://wiki.splunk.com/Deploy" class="banner-link" target="_blank">deploy</a>.
@@ -53,11 +53,15 @@
 
     <div class="modal"></div>
     
+    <!-- Put here to show loading first -->
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
     <!-- Custom -->
     <script src="assets/script.js"></script>
+
+
 
 
 

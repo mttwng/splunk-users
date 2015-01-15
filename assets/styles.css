@@ -94,7 +94,7 @@ a.banner-link:visited {
 	background-image: url('loading.gif');
     background-position: 50% 25%;
     background-repeat: no-repeat;
-    background-size: 10%;
+    background-size: 150px;
 }
 
 body.loading {
@@ -115,25 +115,33 @@ body.loading .modal {
 	body {
 		font-size: 16px;
 	}
-	.modal {
-		background-size: 20%;
-	}
 }
 
-@media (max-width: 768px) and (min-width: 404px) {
+@media (max-width: 700px) and (min-width: 425px) {
 	.modal {
 		top: 207px;
 	}
 }
 
-@media (max-width: 404px) and (min-width: 301px) {
+@media (max-width: 424px) and (min-width: 404px) {
 	.modal {
-		top: 233px;
+		top: 267px;
+	}
+}
+
+@media (max-width: 403px) and (min-width: 301px) {
+	.modal {
+		top: 293px;
 	}
 }
 
 @media (max-width: 300px) {
 	.modal {
-		top: 259px;
+		top: 319px;
 	}
 }
+
+@media screen and (min-width: 425px) {
+   .rwd-break { display: none; }
+}
+
