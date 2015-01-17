@@ -109,10 +109,10 @@
             </div>
 
             <div class="col-md-4 border-left">
-                <h2><a href="http://wiki.splunk.com/" class="no-color" target="_blank">Wiki</a></h2>
-                <p>recently updated posts</p>
+                <h2><a href="http://splunk.meetup.com/" class="no-color" target="_blank">Meetups</a></h2>
+                <p>upcoming meetup groups</p>
                 <hr>
-                <?php include 'wiki.php';?>
+                <?php include 'meetups.php';?>
             </div>
 
         </div>
