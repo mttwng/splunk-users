@@ -102,7 +102,7 @@
             </div>
 
             <div class="col-md-4 border-left">
-                <h2><a href="http://splunk.com/page/events" class="no-color" target="_blank">Events</a></h2>
+                <h2><a href="http://www.splunk.com/en_us/about-us/events.html" class="no-color" target="_blank">Events</a></h2>
                 <p>upcoming events</p>
                 <hr>
                 <?php include 'events.php';?>

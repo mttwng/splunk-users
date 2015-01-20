@@ -1,5 +1,5 @@
 <?php
-    $ch = curl_init('http://www.splunk.com/page/events');
+    $ch = curl_init('http://www.splunk.com/en_us/about-us/events.html');
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 
     /* 
@@ -24,15 +24,21 @@
 
     $doc = new DOMXPath($d);
 
-    $nodes = $doc->query('//div[@id="articleColumn"]/h2/a');
+    $nodes = $doc->query('//div[@class="col-sm-8 col-xs-12 event-description"]/a');
     $count = 0;
     foreach ($nodes as $node) {
-        $text = $node->nodeValue;
-        $link = $node->getAttribute('href');
-        echo "<p><a href='" . $link . "' target='_blank'>" . $text . "</a></p>\n";
+        if ($count % 2 == 0) {
+            $text = $node->nodeValue;
+            $link = $node->getAttribute('href');
+            $excerpt = $node->nextSibling->nextSibling->nextSibling->nextSibling->nextSibling->firstChild->nodeValue;
+            $excerpt = str_replace("'", "", $excerpt);
+            if (strlen($excerpt) > 100)
+                $excerpt = substr($excerpt, 0, 100) . '...';
+            echo "<p><a data-toggle='tooltip' title='" . $excerpt . "' href='" . $link . "' target='_blank'>" . $text . "</a></p>\n";
+        }
 
         $count++;
-        if ($count == 12) {
+        if ($count == 20) {
             break;
         }
 
